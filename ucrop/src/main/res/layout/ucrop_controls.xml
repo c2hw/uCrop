@@ -22,14 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:visibility="gone"
             android:orientation="horizontal" />
 
         <include
             android:id="@+id/layout_rotate_wheel"
+            android:visibility="visible"
             layout="@layout/ucrop_layout_rotate_wheel" />
 
         <include
             android:id="@+id/layout_scale_wheel"
+            android:visibility="gone"
             layout="@layout/ucrop_layout_scale_wheel" />
 
     </FrameLayout>
@@ -45,6 +48,7 @@
         android:id="@+id/wrapper_states"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ucrop_height_wrapper_states"
+        android:visibility="gone"
         android:layout_below="@+id/controls_shadow"
         android:background="@color/ucrop_color_widget_background"
         android:baselineAligned="false"
